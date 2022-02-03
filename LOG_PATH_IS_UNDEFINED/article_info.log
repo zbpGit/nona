@@ -1,0 +1,476 @@
+2022-02-03 19:22:13.793 INFO  nacos 17916 [main] com.nona.article.ArticleApplication - The following profiles are active: application.properties
+2022-02-03 19:22:14.259 WARN  nacos 17916 [main] org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nona.article]' package. Please check your configuration.
+2022-02-03 19:22:14.298 INFO  nacos 17916 [main] org.springframework.cloud.context.scope.GenericScope - BeanFactory id=b44f2d38-1607-34ae-a3f2-016b518d1454
+2022-02-03 19:22:14.430 INFO  nacos 17916 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 19:22:14.432 INFO  nacos 17916 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 19:22:14.599 INFO  nacos 17916 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8060 (http)
+2022-02-03 19:22:14.606 INFO  nacos 17916 [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2022-02-03 19:22:14.606 INFO  nacos 17916 [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-03 19:22:14.606 INFO  nacos 17916 [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-02-03 19:22:14.706 INFO  nacos 17916 [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-03 19:22:14.706 INFO  nacos 17916 [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 900 ms
+2022-02-03 19:22:14.754 WARN  nacos 17916 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 19:22:14.754 INFO  nacos 17916 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 19:22:14.756 WARN  nacos 17916 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 19:22:14.757 INFO  nacos 17916 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 19:22:14.877 INFO  nacos 17916 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-03 19:22:14.910 INFO  nacos 17916 [main] com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2022-02-03 19:22:15.791 INFO  nacos 17916 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 19:22:17.196 WARN  nacos 17916 [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-02-03 19:22:17.196 WARN  nacos 17916 [main] org.springframework.beans.factory.support.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-02-03 19:22:17.197 INFO  nacos 17916 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-03 19:22:17.198 INFO  nacos 17916 [main] org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-02-03 19:22:17.210 INFO  nacos 17916 [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-03 19:22:17.217 ERROR nacos 17916 [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles application.properties are currently active).
+
+2022-02-03 20:25:55.332 INFO  nacos 16936 [main] com.nona.article.ArticleApplication - The following profiles are active: application.properties
+2022-02-03 20:25:55.935 INFO  nacos 16936 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-03 20:25:55.950 INFO  nacos 16936 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 JPA repository interfaces.
+2022-02-03 20:25:56.059 WARN  nacos 16936 [main] org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nona.article]' package. Please check your configuration.
+2022-02-03 20:25:56.106 INFO  nacos 16936 [main] org.springframework.cloud.context.scope.GenericScope - BeanFactory id=6cd06f3d-a8a9-3ce4-8ae1-ee3ee1f5ea0e
+2022-02-03 20:25:56.261 INFO  nacos 16936 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 20:25:56.263 INFO  nacos 16936 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 20:25:56.439 INFO  nacos 16936 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8060 (http)
+2022-02-03 20:25:56.445 INFO  nacos 16936 [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2022-02-03 20:25:56.446 INFO  nacos 16936 [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-03 20:25:56.446 INFO  nacos 16936 [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-02-03 20:25:56.579 INFO  nacos 16936 [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-03 20:25:56.579 INFO  nacos 16936 [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1234 ms
+2022-02-03 20:25:56.742 INFO  nacos 16936 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-03 20:25:56.778 INFO  nacos 16936 [task-1] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-03 20:25:56.832 INFO  nacos 16936 [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2022-02-03 20:25:57.021 INFO  nacos 16936 [task-1] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-03 20:25:57.051 INFO  nacos 16936 [main] com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2022-02-03 20:25:57.113 INFO  nacos 16936 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-02-03 20:25:57.123 INFO  nacos 16936 [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-03 20:25:57.152 WARN  nacos 16936 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 20:25:57.152 INFO  nacos 16936 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 20:25:57.155 WARN  nacos 16936 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 20:25:57.155 INFO  nacos 16936 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 20:25:57.523 INFO  nacos 16936 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-02-03 20:25:57.537 INFO  nacos 16936 [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-02-03 20:25:58.204 INFO  nacos 16936 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 20:25:58.266 INFO  nacos 16936 [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 20:25:58.272 INFO  nacos 16936 [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 20:26:01.451 INFO  nacos 16936 [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2022-02-03 20:26:01.472 INFO  nacos 16936 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8060 (http) with context path ''
+2022-02-03 20:26:01.515 INFO  nacos 16936 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP article-service 192.168.2.165:8060 register finished
+2022-02-03 20:26:02.834 INFO  nacos 16936 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-02-03 20:26:02.846 INFO  nacos 16936 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-02-03 20:26:02.870 INFO  nacos 16936 [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-02-03 20:26:02.925 INFO  nacos 16936 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-02-03 20:26:02.926 INFO  nacos 16936 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-02-03 20:26:02.933 INFO  nacos 16936 [main] com.nona.article.ArticleApplication - Started ArticleApplication in 10.256 seconds (JVM running for 11.893)
+2022-02-03 20:26:23.335 WARN  nacos 16936 [Thread-20] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-02-03 20:26:23.336 WARN  nacos 16936 [Thread-20] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2022-02-03 20:26:23.336 WARN  nacos 16936 [Thread-26] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2022-02-03 20:26:23.336 WARN  nacos 16936 [Thread-26] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2022-02-03 20:26:23.930 INFO  nacos 16936 [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 20:26:23.932 INFO  nacos 16936 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2022-02-03 20:26:23.969 INFO  nacos 16936 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2022-02-03 20:26:32.741 WARN  nacos 16936 [SpringContextShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-02-03 20:26:32.744 INFO  nacos 16936 [SpringContextShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 20:26:32.746 INFO  nacos 16936 [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-03 20:26:32.746 INFO  nacos 16936 [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-02-03 20:26:32.754 INFO  nacos 16936 [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-02-03 20:26:41.514 INFO  nacos 14392 [main] com.nona.article.ArticleApplication - The following profiles are active: application.properties
+2022-02-03 20:26:42.123 INFO  nacos 14392 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-03 20:26:42.137 INFO  nacos 14392 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 JPA repository interfaces.
+2022-02-03 20:26:42.240 WARN  nacos 14392 [main] org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.nona.article]' package. Please check your configuration.
+2022-02-03 20:26:42.286 INFO  nacos 14392 [main] org.springframework.cloud.context.scope.GenericScope - BeanFactory id=6cd06f3d-a8a9-3ce4-8ae1-ee3ee1f5ea0e
+2022-02-03 20:26:42.438 INFO  nacos 14392 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 20:26:42.439 INFO  nacos 14392 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 20:26:42.612 INFO  nacos 14392 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8060 (http)
+2022-02-03 20:26:42.618 INFO  nacos 14392 [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2022-02-03 20:26:42.618 INFO  nacos 14392 [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-03 20:26:42.619 INFO  nacos 14392 [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-02-03 20:26:42.737 INFO  nacos 14392 [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-03 20:26:42.737 INFO  nacos 14392 [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1210 ms
+2022-02-03 20:26:42.869 INFO  nacos 14392 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-03 20:26:42.901 INFO  nacos 14392 [task-1] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-03 20:26:43.010 INFO  nacos 14392 [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2022-02-03 20:26:43.132 INFO  nacos 14392 [task-1] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-03 20:26:43.169 INFO  nacos 14392 [main] com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2022-02-03 20:26:43.224 INFO  nacos 14392 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-02-03 20:26:43.242 INFO  nacos 14392 [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-03 20:26:43.269 WARN  nacos 14392 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 20:26:43.269 INFO  nacos 14392 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 20:26:43.272 WARN  nacos 14392 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 20:26:43.272 INFO  nacos 14392 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 20:26:43.641 INFO  nacos 14392 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-02-03 20:26:43.654 INFO  nacos 14392 [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-02-03 20:26:44.251 INFO  nacos 14392 [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 20:26:44.258 INFO  nacos 14392 [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 20:26:44.309 INFO  nacos 14392 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 20:26:47.499 INFO  nacos 14392 [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2022-02-03 20:26:47.519 INFO  nacos 14392 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8060 (http) with context path ''
+2022-02-03 20:26:47.561 INFO  nacos 14392 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP article-service 192.168.2.165:8060 register finished
+2022-02-03 20:26:48.382 INFO  nacos 14392 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-02-03 20:26:48.391 INFO  nacos 14392 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-02-03 20:26:48.414 INFO  nacos 14392 [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-02-03 20:26:48.465 INFO  nacos 14392 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-02-03 20:26:48.465 INFO  nacos 14392 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-02-03 20:26:48.472 INFO  nacos 14392 [main] com.nona.article.ArticleApplication - Started ArticleApplication in 9.532 seconds (JVM running for 10.892)
+2022-02-03 20:26:59.035 WARN  nacos 14392 [Thread-26] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2022-02-03 20:26:59.035 WARN  nacos 14392 [Thread-20] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-02-03 20:26:59.035 WARN  nacos 14392 [Thread-26] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2022-02-03 20:26:59.036 WARN  nacos 14392 [Thread-20] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2022-02-03 20:37:59.340 INFO  nacos 11488 [main] com.nona.article.ArticleApplication - The following profiles are active: application.properties
+2022-02-03 20:37:59.956 INFO  nacos 11488 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-03 20:37:59.970 INFO  nacos 11488 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 JPA repository interfaces.
+2022-02-03 20:38:00.123 INFO  nacos 11488 [main] org.springframework.cloud.context.scope.GenericScope - BeanFactory id=4c30be65-34b2-363e-8903-0f6db98c9742
+2022-02-03 20:38:00.272 INFO  nacos 11488 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 20:38:00.274 INFO  nacos 11488 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 20:38:00.459 INFO  nacos 11488 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8060 (http)
+2022-02-03 20:38:00.465 INFO  nacos 11488 [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2022-02-03 20:38:00.466 INFO  nacos 11488 [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-03 20:38:00.466 INFO  nacos 11488 [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-02-03 20:38:00.581 INFO  nacos 11488 [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-03 20:38:00.581 INFO  nacos 11488 [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1226 ms
+2022-02-03 20:38:00.715 INFO  nacos 11488 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-03 20:38:00.754 INFO  nacos 11488 [task-1] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-03 20:38:00.867 INFO  nacos 11488 [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2022-02-03 20:38:00.986 INFO  nacos 11488 [task-1] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-03 20:38:01.060 INFO  nacos 11488 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-02-03 20:38:01.456 INFO  nacos 11488 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-02-03 20:38:01.469 INFO  nacos 11488 [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-02-03 20:38:02.069 INFO  nacos 11488 [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 20:38:02.075 INFO  nacos 11488 [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 20:38:03.664 INFO  nacos 11488 [main] com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2022-02-03 20:38:03.739 INFO  nacos 11488 [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-03 20:38:03.765 WARN  nacos 11488 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 20:38:03.765 INFO  nacos 11488 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 20:38:03.768 WARN  nacos 11488 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 20:38:03.769 INFO  nacos 11488 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 20:38:04.841 INFO  nacos 11488 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 20:38:06.112 INFO  nacos 11488 [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2022-02-03 20:38:06.135 INFO  nacos 11488 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8060 (http) with context path ''
+2022-02-03 20:38:06.174 INFO  nacos 11488 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP article-service 192.168.2.165:8060 register finished
+2022-02-03 20:38:07.033 INFO  nacos 11488 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-02-03 20:38:07.043 INFO  nacos 11488 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-02-03 20:38:07.069 INFO  nacos 11488 [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-02-03 20:38:07.286 INFO  nacos 11488 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-02-03 20:38:07.287 INFO  nacos 11488 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-02-03 20:38:07.294 INFO  nacos 11488 [main] com.nona.article.ArticleApplication - Started ArticleApplication in 10.468 seconds (JVM running for 11.749)
+2022-02-03 20:38:48.779 INFO  nacos 11488 [http-nio-8060-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-03 20:38:48.779 INFO  nacos 11488 [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-02-03 20:38:48.787 INFO  nacos 11488 [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2022-02-03 21:10:46.587 WARN  nacos 11488 [Thread-19] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-02-03 21:10:46.587 WARN  nacos 11488 [Thread-25] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2022-02-03 21:10:46.587 WARN  nacos 11488 [Thread-25] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2022-02-03 21:10:46.588 WARN  nacos 11488 [Thread-19] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2022-02-03 21:10:47.164 INFO  nacos 11488 [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 21:10:47.165 INFO  nacos 11488 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2022-02-03 21:10:47.200 INFO  nacos 11488 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2022-02-03 21:10:58.185 INFO  nacos 23520 [main] com.nona.article.ArticleApplication - The following profiles are active: application.properties
+2022-02-03 21:10:58.804 INFO  nacos 23520 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-03 21:10:58.819 INFO  nacos 23520 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 JPA repository interfaces.
+2022-02-03 21:10:58.968 INFO  nacos 23520 [main] org.springframework.cloud.context.scope.GenericScope - BeanFactory id=4c30be65-34b2-363e-8903-0f6db98c9742
+2022-02-03 21:10:59.134 INFO  nacos 23520 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 21:10:59.135 INFO  nacos 23520 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 21:10:59.323 INFO  nacos 23520 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8060 (http)
+2022-02-03 21:10:59.330 INFO  nacos 23520 [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2022-02-03 21:10:59.330 INFO  nacos 23520 [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-03 21:10:59.331 INFO  nacos 23520 [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-02-03 21:10:59.440 INFO  nacos 23520 [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-03 21:10:59.440 INFO  nacos 23520 [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1242 ms
+2022-02-03 21:10:59.581 INFO  nacos 23520 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-03 21:10:59.613 INFO  nacos 23520 [task-1] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-03 21:10:59.728 INFO  nacos 23520 [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2022-02-03 21:10:59.856 INFO  nacos 23520 [task-1] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-03 21:10:59.933 INFO  nacos 23520 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-02-03 21:11:00.336 INFO  nacos 23520 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-02-03 21:11:00.347 INFO  nacos 23520 [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-02-03 21:11:00.971 INFO  nacos 23520 [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 21:11:00.978 INFO  nacos 23520 [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 21:11:02.163 INFO  nacos 23520 [main] com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2022-02-03 21:11:02.238 INFO  nacos 23520 [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-03 21:11:02.263 WARN  nacos 23520 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 21:11:02.263 INFO  nacos 23520 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 21:11:02.266 WARN  nacos 23520 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 21:11:02.266 INFO  nacos 23520 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 21:11:03.255 INFO  nacos 23520 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 21:11:04.669 INFO  nacos 23520 [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2022-02-03 21:11:04.687 INFO  nacos 23520 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8060 (http) with context path ''
+2022-02-03 21:11:04.727 INFO  nacos 23520 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP article-service 192.168.2.165:8060 register finished
+2022-02-03 21:11:05.950 INFO  nacos 23520 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-02-03 21:11:05.967 INFO  nacos 23520 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-02-03 21:11:06.001 INFO  nacos 23520 [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-02-03 21:11:06.244 INFO  nacos 23520 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-02-03 21:11:06.245 INFO  nacos 23520 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-02-03 21:11:06.252 INFO  nacos 23520 [main] com.nona.article.ArticleApplication - Started ArticleApplication in 10.431 seconds (JVM running for 11.723)
+2022-02-03 21:11:21.509 WARN  nacos 23520 [Thread-19] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-02-03 21:11:21.509 WARN  nacos 23520 [Thread-25] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2022-02-03 21:11:21.509 WARN  nacos 23520 [Thread-25] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2022-02-03 21:11:21.509 WARN  nacos 23520 [Thread-19] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2022-02-03 21:12:08.181 INFO  nacos 19352 [main] com.nona.article.ArticleApplication - The following profiles are active: application.properties
+2022-02-03 21:12:08.825 INFO  nacos 19352 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-03 21:12:08.839 INFO  nacos 19352 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 JPA repository interfaces.
+2022-02-03 21:12:08.992 INFO  nacos 19352 [main] org.springframework.cloud.context.scope.GenericScope - BeanFactory id=4c30be65-34b2-363e-8903-0f6db98c9742
+2022-02-03 21:12:09.139 INFO  nacos 19352 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 21:12:09.141 INFO  nacos 19352 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 21:12:09.335 INFO  nacos 19352 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8060 (http)
+2022-02-03 21:12:09.342 INFO  nacos 19352 [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2022-02-03 21:12:09.343 INFO  nacos 19352 [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-03 21:12:09.343 INFO  nacos 19352 [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-02-03 21:12:09.457 INFO  nacos 19352 [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-03 21:12:09.457 INFO  nacos 19352 [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1262 ms
+2022-02-03 21:12:09.599 INFO  nacos 19352 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-03 21:12:09.634 INFO  nacos 19352 [task-1] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-03 21:12:09.765 INFO  nacos 19352 [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2022-02-03 21:12:09.907 INFO  nacos 19352 [task-1] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-03 21:12:10.000 INFO  nacos 19352 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-02-03 21:12:10.357 INFO  nacos 19352 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-02-03 21:12:10.373 INFO  nacos 19352 [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-02-03 21:12:11.114 INFO  nacos 19352 [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 21:12:11.122 INFO  nacos 19352 [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 21:12:12.288 INFO  nacos 19352 [main] com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2022-02-03 21:12:12.363 INFO  nacos 19352 [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-03 21:12:12.388 WARN  nacos 19352 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 21:12:12.389 INFO  nacos 19352 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 21:12:12.392 WARN  nacos 19352 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 21:12:12.392 INFO  nacos 19352 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 21:12:13.409 INFO  nacos 19352 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 21:12:14.614 INFO  nacos 19352 [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2022-02-03 21:12:14.632 INFO  nacos 19352 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8060 (http) with context path ''
+2022-02-03 21:12:14.675 INFO  nacos 19352 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP article-service 192.168.2.165:8060 register finished
+2022-02-03 21:12:15.552 INFO  nacos 19352 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-02-03 21:12:15.563 INFO  nacos 19352 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-02-03 21:12:15.586 INFO  nacos 19352 [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-02-03 21:12:15.805 INFO  nacos 19352 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-02-03 21:12:15.805 INFO  nacos 19352 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-02-03 21:12:15.812 INFO  nacos 19352 [main] com.nona.article.ArticleApplication - Started ArticleApplication in 10.133 seconds (JVM running for 11.382)
+2022-02-03 21:13:42.867 WARN  nacos 19352 [Thread-21] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-02-03 21:13:42.867 WARN  nacos 19352 [Thread-27] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2022-02-03 21:13:42.867 WARN  nacos 19352 [Thread-27] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2022-02-03 21:13:42.868 WARN  nacos 19352 [Thread-21] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2022-02-03 21:13:43.853 INFO  nacos 19352 [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 21:13:43.855 INFO  nacos 19352 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2022-02-03 21:13:43.894 INFO  nacos 19352 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2022-02-03 21:13:49.261 WARN  nacos 19352 [SpringContextShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-02-03 21:13:49.265 INFO  nacos 19352 [SpringContextShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 21:13:49.267 INFO  nacos 19352 [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-03 21:13:49.267 INFO  nacos 19352 [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-02-03 21:13:49.276 INFO  nacos 19352 [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-02-03 21:35:29.751 INFO  nacos 14080 [main] com.nona.article.ArticleApplication - The following profiles are active: application.properties
+2022-02-03 21:35:30.500 INFO  nacos 14080 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-03 21:35:30.519 INFO  nacos 14080 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 JPA repository interfaces.
+2022-02-03 21:35:30.692 INFO  nacos 14080 [main] org.springframework.cloud.context.scope.GenericScope - BeanFactory id=4c30be65-34b2-363e-8903-0f6db98c9742
+2022-02-03 21:35:30.850 INFO  nacos 14080 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 21:35:30.852 INFO  nacos 14080 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 21:35:31.041 INFO  nacos 14080 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8060 (http)
+2022-02-03 21:35:31.049 INFO  nacos 14080 [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2022-02-03 21:35:31.049 INFO  nacos 14080 [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-03 21:35:31.050 INFO  nacos 14080 [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-02-03 21:35:31.166 INFO  nacos 14080 [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-03 21:35:31.166 INFO  nacos 14080 [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1403 ms
+2022-02-03 21:35:31.318 INFO  nacos 14080 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-03 21:35:31.354 INFO  nacos 14080 [task-1] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-03 21:35:31.411 INFO  nacos 14080 [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2022-02-03 21:35:31.706 INFO  nacos 14080 [task-1] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-03 21:35:31.799 INFO  nacos 14080 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-02-03 21:35:32.238 INFO  nacos 14080 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-02-03 21:35:32.252 INFO  nacos 14080 [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-02-03 21:35:33.208 INFO  nacos 14080 [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 21:35:33.216 INFO  nacos 14080 [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 21:35:34.666 INFO  nacos 14080 [main] com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2022-02-03 21:35:34.856 INFO  nacos 14080 [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-03 21:35:34.906 WARN  nacos 14080 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 21:35:34.906 INFO  nacos 14080 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 21:35:34.913 WARN  nacos 14080 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 21:35:34.913 INFO  nacos 14080 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 21:35:36.808 INFO  nacos 14080 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 21:35:38.676 INFO  nacos 14080 [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2022-02-03 21:35:38.695 INFO  nacos 14080 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8060 (http) with context path ''
+2022-02-03 21:35:38.733 INFO  nacos 14080 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP article-service 192.168.2.165:8060 register finished
+2022-02-03 21:35:39.552 INFO  nacos 14080 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-02-03 21:35:39.563 INFO  nacos 14080 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-02-03 21:35:39.588 INFO  nacos 14080 [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-02-03 21:35:39.668 INFO  nacos 14080 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-02-03 21:35:39.669 INFO  nacos 14080 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-02-03 21:35:39.677 INFO  nacos 14080 [main] com.nona.article.ArticleApplication - Started ArticleApplication in 13.429 seconds (JVM running for 15.24)
+2022-02-03 21:39:18.278 INFO  nacos 14080 [http-nio-8060-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-03 21:39:18.278 INFO  nacos 14080 [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-02-03 21:39:18.284 INFO  nacos 14080 [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2022-02-03 21:40:01.814 WARN  nacos 14080 [Thread-22] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-02-03 21:40:01.814 WARN  nacos 14080 [Thread-28] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2022-02-03 21:40:01.815 WARN  nacos 14080 [Thread-28] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2022-02-03 21:40:01.815 WARN  nacos 14080 [Thread-22] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2022-02-03 21:40:02.771 INFO  nacos 14080 [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 21:40:02.773 INFO  nacos 14080 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2022-02-03 21:40:02.809 INFO  nacos 14080 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2022-02-03 21:40:48.764 INFO  nacos 20280 [main] com.nona.article.ArticleApplication - The following profiles are active: application.properties
+2022-02-03 21:40:49.421 INFO  nacos 20280 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-03 21:40:49.437 INFO  nacos 20280 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 JPA repository interfaces.
+2022-02-03 21:40:49.603 INFO  nacos 20280 [main] org.springframework.cloud.context.scope.GenericScope - BeanFactory id=4c30be65-34b2-363e-8903-0f6db98c9742
+2022-02-03 21:40:49.779 INFO  nacos 20280 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 21:40:49.781 INFO  nacos 20280 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 21:40:49.990 INFO  nacos 20280 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8060 (http)
+2022-02-03 21:40:49.998 INFO  nacos 20280 [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2022-02-03 21:40:49.999 INFO  nacos 20280 [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-03 21:40:49.999 INFO  nacos 20280 [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-02-03 21:40:50.130 INFO  nacos 20280 [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-03 21:40:50.130 INFO  nacos 20280 [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1352 ms
+2022-02-03 21:40:50.294 INFO  nacos 20280 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-03 21:40:50.344 INFO  nacos 20280 [task-1] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-03 21:40:50.460 INFO  nacos 20280 [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2022-02-03 21:40:50.603 INFO  nacos 20280 [task-1] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-03 21:40:50.693 INFO  nacos 20280 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-02-03 21:40:51.077 INFO  nacos 20280 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-02-03 21:40:51.088 INFO  nacos 20280 [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-02-03 21:40:51.716 INFO  nacos 20280 [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 21:40:51.722 INFO  nacos 20280 [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 21:40:52.919 INFO  nacos 20280 [main] com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2022-02-03 21:40:52.994 INFO  nacos 20280 [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-03 21:40:53.018 WARN  nacos 20280 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 21:40:53.018 INFO  nacos 20280 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 21:40:53.021 WARN  nacos 20280 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 21:40:53.021 INFO  nacos 20280 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 21:40:54.060 INFO  nacos 20280 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 21:40:55.344 INFO  nacos 20280 [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2022-02-03 21:40:55.364 INFO  nacos 20280 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8060 (http) with context path ''
+2022-02-03 21:40:55.408 INFO  nacos 20280 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP article-service 192.168.2.165:8060 register finished
+2022-02-03 21:40:55.418 INFO  nacos 20280 [http-nio-8060-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-03 21:40:55.418 INFO  nacos 20280 [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-02-03 21:40:55.425 INFO  nacos 20280 [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2022-02-03 21:40:56.468 INFO  nacos 20280 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-02-03 21:40:56.481 INFO  nacos 20280 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-02-03 21:40:56.508 INFO  nacos 20280 [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-02-03 21:40:56.589 INFO  nacos 20280 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-02-03 21:40:56.589 INFO  nacos 20280 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-02-03 21:40:56.596 INFO  nacos 20280 [main] com.nona.article.ArticleApplication - Started ArticleApplication in 10.851 seconds (JVM running for 12.638)
+2022-02-03 21:47:53.896 WARN  nacos 20280 [Thread-22] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-02-03 21:47:53.898 WARN  nacos 20280 [Thread-28] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2022-02-03 21:47:53.898 WARN  nacos 20280 [Thread-28] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2022-02-03 21:47:53.898 WARN  nacos 20280 [Thread-22] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2022-02-03 21:47:55.006 INFO  nacos 20280 [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 21:47:55.009 INFO  nacos 20280 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2022-02-03 21:47:55.041 INFO  nacos 20280 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2022-02-03 21:48:01.163 WARN  nacos 20280 [SpringContextShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-02-03 21:48:01.166 INFO  nacos 20280 [SpringContextShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 21:48:01.168 INFO  nacos 20280 [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-03 21:48:01.169 INFO  nacos 20280 [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-02-03 21:48:01.178 INFO  nacos 20280 [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-02-03 21:49:31.969 INFO  nacos 23512 [main] com.nona.article.ArticleApplication - The following profiles are active: application.properties
+2022-02-03 21:49:32.683 INFO  nacos 23512 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-03 21:49:32.703 INFO  nacos 23512 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 JPA repository interfaces.
+2022-02-03 21:49:32.870 INFO  nacos 23512 [main] org.springframework.cloud.context.scope.GenericScope - BeanFactory id=4c30be65-34b2-363e-8903-0f6db98c9742
+2022-02-03 21:49:33.027 INFO  nacos 23512 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 21:49:33.028 INFO  nacos 23512 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 21:49:33.216 INFO  nacos 23512 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8060 (http)
+2022-02-03 21:49:33.224 INFO  nacos 23512 [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2022-02-03 21:49:33.224 INFO  nacos 23512 [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-03 21:49:33.225 INFO  nacos 23512 [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-02-03 21:49:33.344 INFO  nacos 23512 [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-03 21:49:33.345 INFO  nacos 23512 [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1360 ms
+2022-02-03 21:49:33.516 INFO  nacos 23512 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-03 21:49:33.579 INFO  nacos 23512 [task-1] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-03 21:49:33.733 INFO  nacos 23512 [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2022-02-03 21:49:33.887 INFO  nacos 23512 [task-1] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-03 21:49:33.982 INFO  nacos 23512 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-02-03 21:49:34.399 INFO  nacos 23512 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-02-03 21:49:34.413 INFO  nacos 23512 [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-02-03 21:49:35.116 INFO  nacos 23512 [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 21:49:35.122 INFO  nacos 23512 [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 21:49:37.086 INFO  nacos 23512 [main] com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2022-02-03 21:49:37.161 INFO  nacos 23512 [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-03 21:49:37.184 WARN  nacos 23512 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 21:49:37.185 INFO  nacos 23512 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 21:49:37.188 WARN  nacos 23512 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 21:49:37.188 INFO  nacos 23512 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 21:49:38.478 INFO  nacos 23512 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 21:49:39.853 INFO  nacos 23512 [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2022-02-03 21:49:39.870 INFO  nacos 23512 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8060 (http) with context path ''
+2022-02-03 21:49:39.914 INFO  nacos 23512 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP article-service 192.168.2.165:8060 register finished
+2022-02-03 21:49:40.749 INFO  nacos 23512 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-02-03 21:49:40.761 INFO  nacos 23512 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-02-03 21:49:40.789 INFO  nacos 23512 [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-02-03 21:49:41.006 INFO  nacos 23512 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-02-03 21:49:41.006 INFO  nacos 23512 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-02-03 21:49:41.013 INFO  nacos 23512 [main] com.nona.article.ArticleApplication - Started ArticleApplication in 12.706 seconds (JVM running for 14.214)
+2022-02-03 21:50:07.408 INFO  nacos 23512 [http-nio-8060-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-03 21:50:07.409 INFO  nacos 23512 [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-02-03 21:50:07.416 INFO  nacos 23512 [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2022-02-03 21:55:23.925 WARN  nacos 23512 [Thread-28] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2022-02-03 21:55:23.925 WARN  nacos 23512 [Thread-22] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-02-03 21:55:23.926 WARN  nacos 23512 [Thread-28] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2022-02-03 21:55:23.927 WARN  nacos 23512 [Thread-22] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2022-02-03 21:55:24.983 INFO  nacos 23512 [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 21:55:24.985 INFO  nacos 23512 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2022-02-03 21:55:25.030 INFO  nacos 23512 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2022-02-03 21:55:33.682 WARN  nacos 23512 [SpringContextShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-02-03 21:55:33.686 INFO  nacos 23512 [SpringContextShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 21:55:33.688 INFO  nacos 23512 [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-03 21:55:33.688 INFO  nacos 23512 [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-02-03 21:55:33.695 INFO  nacos 23512 [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-02-03 21:56:58.185 INFO  nacos 22028 [main] com.nona.article.ArticleApplication - The following profiles are active: application.properties
+2022-02-03 21:56:58.837 INFO  nacos 22028 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-03 21:56:58.854 INFO  nacos 22028 [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 JPA repository interfaces.
+2022-02-03 21:56:59.041 INFO  nacos 22028 [main] org.springframework.cloud.context.scope.GenericScope - BeanFactory id=4c30be65-34b2-363e-8903-0f6db98c9742
+2022-02-03 21:56:59.201 INFO  nacos 22028 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 21:56:59.202 INFO  nacos 22028 [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 21:56:59.432 INFO  nacos 22028 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8060 (http)
+2022-02-03 21:56:59.441 INFO  nacos 22028 [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2022-02-03 21:56:59.442 INFO  nacos 22028 [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-03 21:56:59.442 INFO  nacos 22028 [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-02-03 21:56:59.573 INFO  nacos 22028 [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-03 21:56:59.574 INFO  nacos 22028 [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1377 ms
+2022-02-03 21:56:59.738 INFO  nacos 22028 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-03 21:56:59.777 INFO  nacos 22028 [task-1] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-03 21:56:59.883 INFO  nacos 22028 [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.18.Final
+2022-02-03 21:57:00.038 INFO  nacos 22028 [task-1] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-03 21:57:00.126 INFO  nacos 22028 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-02-03 21:57:00.529 INFO  nacos 22028 [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-02-03 21:57:00.543 INFO  nacos 22028 [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-02-03 21:57:01.264 INFO  nacos 22028 [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 21:57:01.280 INFO  nacos 22028 [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 21:57:02.575 INFO  nacos 22028 [main] com.alibaba.cloud.sentinel.SentinelWebAutoConfiguration - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2022-02-03 21:57:02.664 INFO  nacos 22028 [main] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-02-03 21:57:02.712 WARN  nacos 22028 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 21:57:02.712 INFO  nacos 22028 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 21:57:02.718 WARN  nacos 22028 [main] com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2022-02-03 21:57:02.718 INFO  nacos 22028 [main] com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-02-03 21:57:04.395 INFO  nacos 22028 [main] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 21:57:06.113 INFO  nacos 22028 [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2022-02-03 21:57:06.132 INFO  nacos 22028 [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8060 (http) with context path ''
+2022-02-03 21:57:06.171 INFO  nacos 22028 [main] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP article-service 192.168.2.165:8060 register finished
+2022-02-03 21:57:07.299 INFO  nacos 22028 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-02-03 21:57:07.314 INFO  nacos 22028 [main] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-02-03 21:57:07.345 INFO  nacos 22028 [main] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-02-03 21:57:07.562 INFO  nacos 22028 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+2022-02-03 21:57:07.562 INFO  nacos 22028 [main] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+2022-02-03 21:57:07.569 INFO  nacos 22028 [main] com.nona.article.ArticleApplication - Started ArticleApplication in 12.008 seconds (JVM running for 13.301)
+2022-02-03 21:58:13.849 INFO  nacos 22028 [http-nio-8060-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-03 21:58:13.849 INFO  nacos 22028 [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-02-03 21:58:13.855 INFO  nacos 22028 [http-nio-8060-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2022-02-03 22:01:56.208 WARN  nacos 22028 [Thread-26] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2022-02-03 22:01:56.208 WARN  nacos 22028 [Thread-20] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-02-03 22:01:56.208 WARN  nacos 22028 [Thread-26] com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2022-02-03 22:01:56.210 WARN  nacos 22028 [Thread-20] com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2022-02-03 22:01:57.143 INFO  nacos 22028 [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-02-03 22:01:57.146 INFO  nacos 22028 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2022-02-03 22:01:57.176 INFO  nacos 22028 [SpringContextShutdownHook] com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2022-02-03 22:02:01.331 WARN  nacos 22028 [SpringContextShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-02-03 22:02:01.334 INFO  nacos 22028 [SpringContextShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 22:02:01.337 INFO  nacos 22028 [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-03 22:02:01.337 INFO  nacos 22028 [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-02-03 22:02:01.346 INFO  nacos 22028 [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
