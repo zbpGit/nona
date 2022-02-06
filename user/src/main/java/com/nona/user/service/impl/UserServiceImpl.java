@@ -47,6 +47,5 @@ public class UserServiceImpl implements UserService {
             userOrders.add(userOrderVo);
         }
         orderService.batchAddUserOrder(userOrders);
-        System.out.println(123);
     }
 }
