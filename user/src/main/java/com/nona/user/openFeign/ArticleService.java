@@ -20,6 +20,6 @@ import java.util.List;
 @FeignClient(value = "article-service", path = "/article", fallbackFactory = ArticleSentielFallbackFactory.class, configuration = FeignConfig.class)
 public interface ArticleService {
 
-    @GetMapping(value = "/getList")
-    ResponseFactory<List<ArticleVo>> getList();
+    @GetMapping(value = "/buckleOne")
+    ResponseFactory<List<ArticleVo>> buckleOne();
 }

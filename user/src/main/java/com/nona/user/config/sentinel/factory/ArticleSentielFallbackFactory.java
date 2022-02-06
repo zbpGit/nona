@@ -31,7 +31,7 @@ public class ArticleSentielFallbackFactory implements FallbackFactory<ArticleSer
     public ArticleService create(Throwable e) {
         return new ArticleService() {
             @Override
-            public ResponseFactory<List<ArticleVo>> getList() {
+            public ResponseFactory<List<ArticleVo>> buckleOne() {
                 String message = null;
                 if (e instanceof FlowException) {
                     message = "Article服务调用时触发了流控";

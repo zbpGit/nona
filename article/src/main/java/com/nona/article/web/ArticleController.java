@@ -25,8 +25,8 @@ public class ArticleController {
     @Autowired
     private ArticleService articleService;
 
-    @GetMapping(value = "/getList")
-    public ResponseFactory<List<Article>> getList() {
-        return ResponseFactory.responseSuccess(articleService.getList());
+    @GetMapping(value = "/buckleOne")
+    public ResponseFactory<List<Article>> buckleOne() {
+        return ResponseFactory.responseSuccess(articleService.buckleOne());
     }
 }

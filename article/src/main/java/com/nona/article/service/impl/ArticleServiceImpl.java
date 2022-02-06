@@ -24,7 +24,10 @@ import java.util.List;
 public class ArticleServiceImpl extends ServiceImpl<ArticleDao, Article> implements ArticleService {
 
     @Override
-    public List<Article> getList() {
-        return this.list();
+    public List<Article> buckleOne() {
+        List<Article> articleList = this.list();
+        articleList.stream().forEach(f -> f.setAmount(f.getAmount() - 1));
+        this.updateBatchById(articleList);
+        return articleList;
     }
 }
