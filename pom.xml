@@ -17,6 +17,7 @@
         <module>user</module>
         <module>article</module>
         <module>order</module>
+        <module>gateway</module>
     </modules>
 
     <properties>
